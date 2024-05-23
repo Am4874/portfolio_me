@@ -25,11 +25,11 @@ export default function Header() {
       slug: "/blogs",
       active: true,
     },
-    {
-      name: "About",
-      slug: "/about",
-      active: true,
-    },
+    // {
+    //   name: "About",
+    //   slug: "/about",
+    //   active: true,
+    // },
     {
       name: "Contact",
       slug: "/contact",
@@ -41,18 +41,18 @@ export default function Header() {
     <>
       <header className="">
         <nav className="flex justify-evenly flex-wrap">
-          <div className="my-3">
+          <div className="my-3 text-xl font-medium">
             {/* logo */}
             <Link to="./">
               <Logo />
             </Link>
           </div>
           <div className="m-1">
-            <ul className="flex justify-center items-center gap-2 flex-wrap my-3">
+            <ul className="flex justify-center items-center flex-wrap my-3">
               {navItems.map((item) => {
                 return (
                   item.active && (
-                    <li key={item.name}>
+                    <li className=" font-medium text-xl mx-2" key={item.name}>
                       <button onClick={() => navigate(item.slug)} className="">
                         {item.name}
                       </button>

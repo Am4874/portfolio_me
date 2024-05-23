@@ -1,6 +1,6 @@
 import React from "react";
 import { BadgeCheckIcon, ChipIcon } from "@heroicons/react/solid";
-import skills from "./skills.json";
+import skills from "../../data/skills.json";
 
 export default function Skills() {
   return (
@@ -16,7 +16,7 @@ export default function Skills() {
           {skills.map((skill) => (
             <div key={skill.id} className="p-4 w-full sm:w-1/2 lg:w-1/3">
               <div className="flex items-center">
-                <BadgeCheckIcon className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
+                <BadgeCheckIcon className=" text-blue-900 w-6 h-6 flex-shrink-0 mr-4" />
                 <span className="title-font font-medium text-black">
                   {skill.skill}
                 </span>
