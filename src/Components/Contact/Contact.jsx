@@ -8,7 +8,7 @@ function Contact() {
       <div className="text-xl font-medium text-center flex flex-col gap-4">
         <h2>Contact Me</h2>
         <p>Email: {contact.email}</p>
-        <p>Phone: {contact.phone}</p>
+        {/* <p>Phone: {contact.phone}</p> */}
         <p>Address: {contact.address}</p>
         <p>
           <Link to={contact.Github}>Github</Link>
