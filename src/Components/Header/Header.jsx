@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Logo } from "../Logo";
+import DarkLightButton from "../DarkLightButton";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -39,15 +40,15 @@ export default function Header() {
 
   return (
     <>
-      <header className="">
-        <nav className="flex justify-evenly flex-wrap">
-          <div className="my-3 text-xl font-medium">
-            {/* logo */}
+      <header className=" mt-12">
+        <nav className="p-4 flex justify-around items-center">
+          {/* <div className="my-3 text-xl font-medium">
+          
             <Link to="./">
               <Logo />
             </Link>
-          </div>
-          <div className="m-1">
+          </div> */}
+          <div>
             <ul className="flex justify-center items-center flex-wrap my-3">
               {navItems.map((item) => {
                 return (
@@ -63,6 +64,8 @@ export default function Header() {
               })}
             </ul>
           </div>
+
+          <DarkLightButton />
         </nav>
       </header>
     </>

@@ -1,5 +1,9 @@
 import React from "react";
 
 export function Logo() {
-  return <div>Logo</div>;
+  return (
+    <div>
+      <img src="" alt="Logo" />
+    </div>
+  );
 }
