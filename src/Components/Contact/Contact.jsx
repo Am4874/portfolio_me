@@ -1,27 +1,54 @@
 import React from "react";
-import contact from "../../data/contact.json";
 import { Link } from "react-router-dom";
+import { mail, github, linkedin, X, instagram } from "../../assets";
+
+const contacts = [
+  {
+    name: "Gmail",
+    link: "ambedkaramit176@gmail.com",
+    image: mail,
+  },
+  {
+    name: "X.com",
+    link: "https://x.com/AmitAmbedkar14",
+    image: X,
+  },
+  {
+    name: "Instagram",
+    link: "https://www.instagram.com/amitto_001",
+    image: instagram,
+  },
+  {
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/amit-ambedkar",
+    image: linkedin,
+  },
+  {
+    name: "Github",
+    link: "https://github.com/Am4874",
+    image: github,
+  },
+];
 
 function Contact() {
   return (
     <section>
-      <div className="text-xl font-medium text-center flex flex-col gap-4">
-        <h2>Contact Me</h2>
-        <p>Email: {contact.email}</p>
-        {/* <p>Phone: {contact.phone}</p> */}
-        <p>Address: {contact.address}</p>
-        <p>
-          <Link to={contact.Github}>Github</Link>
-        </p>
-        <p>
-          <Link to={contact.Linkedin}>Linkedin</Link>
-        </p>
-        <p>
-          <Link to={contact.X}>X</Link>
-        </p>
-        <p>
-          <Link to={contact.Instagram}>Instagram</Link>
-        </p>
+      <div className="flex gap-4 rounded-lg">
+        {contacts.map((contact) => {
+          return (
+            <p
+              className=" dark:bg-slate-500 rounded-lg hover:cursor-pointer"
+              key={contact.name}
+            >
+              <img
+                className="w-11 hover:translate-y-1"
+                src={contact.image}
+                alt={contact.name}
+              />
+              <Link to={contact.link} />
+            </p>
+          );
+        })}
       </div>
     </section>
   );

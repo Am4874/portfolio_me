@@ -31,16 +31,16 @@ export default function Header() {
     //   slug: "/about",
     //   active: true,
     // },
-    {
-      name: "Contact",
-      slug: "/contact",
-      active: true,
-    },
+    // {
+    //   name: "Contact",
+    //   slug: "/contact",
+    //   active: true,
+    // },
   ];
 
   return (
     <>
-      <header className=" mt-12">
+      <header className="mt-12  m-5 shadow dark:bg-slate-700 rounded-lg">
         <nav className="p-4 flex justify-around items-center">
           {/* <div className="my-3 text-xl font-medium">
           

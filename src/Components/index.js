@@ -4,6 +4,8 @@ import About from "./About/About"
 import Contact from './Contact/Contact'
 import Footer from "./Footer/Footer";
 import Skills from "./Skill/Skills";
+import BlogSection from "./BlogSection/BlogSection";
+import ImageContainer from "./ImageContainer";
 
 export {
     Header,
@@ -12,4 +14,6 @@ export {
     Contact,
     Footer,
     Skills,
+    BlogSection,
+    ImageContainer,
 }

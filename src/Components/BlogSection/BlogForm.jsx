@@ -1,11 +1,11 @@
 import React from "react";
 
-function Blogs() {
+function BlogForm() {
   return (
     <div>
-      <h1>Blog</h1>
+      <h1>Blogs</h1>
     </div>
   );
 }
 
-export default Blogs;
+export default BlogForm;
