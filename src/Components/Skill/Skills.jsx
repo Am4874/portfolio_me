@@ -95,7 +95,7 @@ export default function Skills() {
               key={skill.id}
               className="p-4 text-2xl font-bold w-full sm:w-1/2  lg:w-1/3"
             >
-              <div className="flex items-center justify-center shadow hover:translate-y-1 hover:bg-slate-100">
+              <div className="flex items-center justify-center shadow hover:translate-y-1 hover:bg-slate-100 hover:text-black">
                 <img
                   className="w-7 h-6 flex-shrink-0 mr-4"
                   src={skill.img}
