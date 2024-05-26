@@ -5,7 +5,7 @@ import { mail, github, linkedin, X, instagram } from "../../assets";
 const contacts = [
   {
     name: "Gmail",
-    link: "ambedkaramit176@gmail.com",
+    link: "mailto:ambedkaramit176@gmail.com",
     image: mail,
   },
   {
@@ -40,12 +40,13 @@ function Contact() {
               className=" dark:bg-slate-500 rounded-lg hover:cursor-pointer"
               key={contact.name}
             >
-              <img
-                className="w-11 hover:translate-y-1"
-                src={contact.image}
-                alt={contact.name}
-              />
-              <Link to={contact.link} />
+              <Link to={contact.link} target="_blank">
+                <img
+                  className="w-11 hover:translate-y-1"
+                  src={contact.image}
+                  alt={contact.name}
+                />
+              </Link>
             </p>
           );
         })}
