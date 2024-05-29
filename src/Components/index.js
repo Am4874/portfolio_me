@@ -4,7 +4,7 @@ import About from "./About/About"
 import Contact from './Contact/Contact'
 import Footer from "./Footer/Footer";
 import Skills from "./Skill/Skills";
-import BlogSection from "./BlogSection/BlogSection";
+import Blogs from "./Blog/Blogs";
 import ImageContainer from "./ImageContainer";
 
 export {
@@ -14,6 +14,6 @@ export {
     Contact,
     Footer,
     Skills,
-    BlogSection,
+    Blogs,
     ImageContainer,
 }

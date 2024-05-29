@@ -1,7 +1,7 @@
 import React from "react";
 import Blogs from "../Components/Blog/Blogs";
 
-function AllBlogs() {
+function BlogPage() {
   return (
     <div>
       <Blogs />
@@ -9,4 +9,4 @@ function AllBlogs() {
   );
 }
 
-export default AllBlogs;
+export default BlogPage;

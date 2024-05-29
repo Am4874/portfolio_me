@@ -89,13 +89,13 @@ export default function Skills() {
   return (
     <section id="skills">
       <div className="container px-5 py-10 mx-auto">
-        <div className="flex flex-wrap m-4 dark:bg-slate-500 rounded-lg">
+        <div className="flex flex-wrap m-4 dark:bg-slate-700 rounded-lg">
           {skills.map((skill) => (
             <div
               key={skill.id}
               className="p-4 text-2xl font-bold w-full sm:w-1/2  lg:w-1/3"
             >
-              <div className="flex items-center justify-center shadow hover:translate-y-1 hover:bg-slate-100 hover:text-black hover:rounded-lg">
+              <div className="flex items-center justify-center shadow hover:translate-y-1 hover:bg-slate-300 hover:text-black hover:rounded-lg">
                 <img
                   className="w-7 h-6 flex-shrink-0 mr-4"
                   src={skill.img}

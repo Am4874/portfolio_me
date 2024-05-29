@@ -1,9 +1,9 @@
 import Home from './Home'
 import Projectpage from './Projectpage'
-import Blog from "./Blog"
+import AllBlogs from './AllBlogs'
 
 export {
     Home,
     Projectpage,
-    Blog,
+    AllBlogs,
 }
