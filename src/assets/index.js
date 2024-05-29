@@ -16,6 +16,11 @@ import sql from './image/sql.png';
 import tailwindcss from './image/tailwindcss.png';
 import X from './image/X.png';
 import mail from './image/mail.png'
+import portfolio from './image/portfolio.jpg'
+import restaurantsite from './image/restaurantsite.jpg'
+import blogsite from './image/blogsite.jpg'
+import chatapp from './image/chatapp.png'
+
 
 export {
     bootstrap,
@@ -35,5 +40,9 @@ export {
     gmail,
     html,
     css3,
-    mail
+    mail,
+    portfolio,
+    restaurantsite,
+    blogsite,
+    chatapp,
 };

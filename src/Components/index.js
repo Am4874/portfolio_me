@@ -6,6 +6,7 @@ import Footer from "./Footer/Footer";
 import Skills from "./Skill/Skills";
 import Blogs from "./Blog/Blogs";
 import ImageContainer from "./ImageContainer";
+import Project from "./projects/Project";
 
 export {
     Header,
@@ -16,4 +17,5 @@ export {
     Skills,
     Blogs,
     ImageContainer,
+    Project,
 }

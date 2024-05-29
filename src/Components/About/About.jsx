@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function About() {
   return (
-    <div>
+    <div className="">
       <div className="text-left mt-8 h-full">
-        <h1 className="text-4xl font-bold">Amit</h1>
+        <h1 className="text-4xl font-bold">Hi,I Am Amit</h1>
         <h2 className="text-3xl font-bold">Software Developer</h2>
         <p className=" text-justify font-medium">
           A passionate software developer with a robust background in web
@@ -21,7 +21,7 @@ function About() {
         <div className="text-left font-bold text-2xl my-5 cursor-pointer">
           <button className="px-3 rounded-md shadow hover:translate-x-1 ">
             <Link
-              to={`https://drive.google.com/file/d/1k9F0FXn3vxTd91Ht_jlwpykwzwc-rzSK/view?usp=sharing`}
+              to={`https://drive.google.com/file/d/145oGG94wb8YCl77xxO8mF38m4WRMenED/view?usp=sharing`}
               className=" flex items-center gap-2 border-b-2 border-cyan-600"
             >
               Resume

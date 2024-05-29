@@ -1,10 +1,11 @@
 import React from "react";
-import { Projects } from "../Components";
+import { Projects, Project } from "../Components";
 
 function Projectpage() {
   return (
     <div>
-      <Projects />
+      {/* <Projects /> */}
+      <Project />
     </div>
   );
 }
