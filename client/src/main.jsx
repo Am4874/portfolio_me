@@ -21,7 +21,7 @@ const router = createBrowserRouter([
         element: <Skills />,
       },
       {
-        path: "/project",
+        path: "/projects",
         element: <Projectpage />,
       },
       {
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
         element: <AllBlogs />,
       },
       {
-        path: "/about",
+        path: "/about-me",
         element: <About />,
       },
       {
