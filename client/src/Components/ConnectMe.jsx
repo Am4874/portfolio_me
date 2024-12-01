@@ -33,16 +33,22 @@ const ConnectMe = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("formData: ", formData);
+    console.log("import.meta.env.VITE_API_URL: ", import.meta.env.VITE_API_URL);
 
     try {
       // Replace with your actual form submission logic (e.g., EmailJS, Formspree)
-      const response = await fetch("/api/submit-form", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        `${import.meta.env.VITE_API_URL}/api/submit-message`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      console.log("response: ", response);
 
       if (response.ok) {
         setFormStatus({ submitted: true, error: false });

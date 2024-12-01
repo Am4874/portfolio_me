@@ -3,6 +3,8 @@ const nodemailer = require("nodemailer");
 
 // Create a new message and send email
 exports.createMessage = async (req, res) => {
+  console.log("createMessage", req.body);
+  
   try {
     // Create message in database
     const message = await Message.create(req.body);
@@ -19,7 +21,7 @@ exports.createMessage = async (req, res) => {
     // Email configuration
     const mailOptions = {
       from: process.env.EMAIL_USER,
-      to: process.env.EMAIL_USER, // Your personal email
+      to: process.env.EMAIL_USER_RECIPIENT, // Your personal email
       subject: "New Portfolio Message",
       html: `
         <h2>New Message from Portfolio</h2>
