@@ -1,31 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { ThemeProvider } from "../context/theme";
-import ThemeButton from "./ThemeButton";
+import useTheme from "../context/theme";
+import { CiLight, CiDark } from "react-icons/ci";
 
 function DarkLightButton() {
-  const [themeMode, setThemeMode] = useState("light");
-  const darkTheme = () => {
-    setThemeMode("dark");
-  };
-  const lightTheme = () => {
-    setThemeMode("light");
-  };
+  const { themeMode, toggleTheme } = useTheme();
 
-  useEffect(() => {
-    let html = document.querySelector("html");
-    html.classList.remove("light", "dark");
-    html.classList.add(themeMode);
-  }, [themeMode]);
   return (
-    <ThemeProvider value={{ themeMode, darkTheme, lightTheme }}>
-      <div>
-        <div>
-          <div>
-            <ThemeButton />
-          </div>
-        </div>
-      </div>
-    </ThemeProvider>
+    <button
+      onClick={toggleTheme}
+      className="p-2 rounded-full bg-gray-200 dark:bg-gray-700"
+      title={`Switch to ${themeMode === "light" ? "Dark" : "Light"} Mode`}
+    >
+      {themeMode === "light" ? <CiDark /> : <CiLight />}
+    </button>
   );
 }
 
